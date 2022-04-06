@@ -1,4 +1,4 @@
-# DigitalOcean Server Setup
+# DigitalOcean + Django Server Setup
 
 ## For connecting to your droplet with a Django app...
 
