@@ -11,7 +11,7 @@
 
 
  Prerequisites:
-> * An Ubuntu droplet on DigitalOcean (5-10 USD a month)
+> * An Ubuntu droplet on DigitalOcean (5-10 USD a month) that you have the IP address for 
 > * PuTTy installed on Windows
 > * Powershell with Admin Rights (or VSCode with Admin Rights)
 > * Internet Access
