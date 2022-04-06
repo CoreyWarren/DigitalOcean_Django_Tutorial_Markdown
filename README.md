@@ -493,6 +493,19 @@ $ . env/bin/activate
 > > mysql> FLUSH PRIVILEGES;
 
 
+Input this command, 
+```
+(env) me@ubuntu:$ python manage.py createsuperuser
+```
+Then, follow the instructions to create your super user. You don't necessarily need to input your email here.
+> **Question:**
+>
+> "Why do I want to create a super user?"
+>
+> **Answer:**
+>
+> Because, a superuser will have administrator rights and the ability to fiddle around with your database via Django's user-friendly database editor. It's handy! One of the main reasons you even want to use Django is to make use of its super user functionality.
+
 #
 ## 7 - Adjusting Firewall Settings
 
@@ -556,10 +569,11 @@ Solution: There's a lot more that must be done. But that won't be covered in thi
 
 #
 ## 9 - Congratulations!
+
 <br/>
 
-### What we learned and did:
-<br/>
+## What we learned and did:
+
 
 > Django/DigitalOcean/PuTTy/SSH/Python stuff:
 * How to set up our **PuTTy connection** and save it
