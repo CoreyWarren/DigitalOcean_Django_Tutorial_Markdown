@@ -493,7 +493,7 @@ $ . env/bin/activate
 > > mysql> FLUSH PRIVILEGES;
 
 
-Input this command, 
+After dealing with the mess that is migrations, Input this command:
 ```
 (env) me@ubuntu:$ python manage.py createsuperuser
 ```
