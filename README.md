@@ -491,8 +491,9 @@ $ . env/bin/activate
 > * $ mysql -u root -p
 > * (enter password for root mySQL)
 > * mysql> CREATE USER my_username@localhost IDENTIFIED BY 'mypassword';
+> * mysql> GRANT ALL ON my_database.* TO 'my_username'@'localhost'; <br/>
 > * mysql> FLUSH PRIVILEGES;
-> > (Note: this gives all permissions to alter and control your mySQL database to 'Bill'... be careful!)
+> > (Note: this gives all permissions to alter and control your mySQL database to 'my_username'... be careful!)
 >
 > > Extra Note: Don't forget to get back into your VENV when trying to run 'manage.py' with Python! You're welcome!
 >
