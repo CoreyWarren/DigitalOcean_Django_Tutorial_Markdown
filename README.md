@@ -16,6 +16,21 @@
 > * Powershell with Admin Rights (or VSCode with Admin Rights)
 > * Internet Access
 
+> **Question:**
+>
+> "Why look at this tutorial when I can just check those links out?"
+>
+> **Answer:**
+>
+> **#1** - This tutorial consolidates those 3 tutorials into a single tutorial.
+>
+> **#2** - This tutorial includes more troubleshooting than those other tutorials.
+>
+> **#3** - This tutorial was done by someone who has actually tried to do these tutorials and run into problems, and solved them.
+>
+> **#4** - This tutorial can be forked on Github and improved if need be.
+
+
 #
 ## 1.1 - Connect to Droplet with Putty
 
