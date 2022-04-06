@@ -595,7 +595,7 @@ Solution: There's a lot more that must be done. But that won't be covered in thi
 
 * How to **update/upgrade all programs**
 
-* How to **install mysqlclient** even though it's unecessarily super-hard.
+* How to **install mysqlclient** even though it's unnecessarily super-hard.
 
 <br/>
 
