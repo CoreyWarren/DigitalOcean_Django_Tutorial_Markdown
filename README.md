@@ -2,7 +2,7 @@
 
 ## For connecting to your droplet with a Django app...
 
-> Reference: 
+> References: 
 >
 > https://www.digitalocean.com/community/tutorials/how-to-create-a-django-app-and-connect-it-to-a-database
 > https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-20-04
