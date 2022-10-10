@@ -314,6 +314,8 @@ $ sudo apt install python3.8-venv
 
 $ ls
 
+$ sudo python3 -m venv env
+
 $ . env/bin/activate
 
 (env) me@ubuntu:$ pip install django
