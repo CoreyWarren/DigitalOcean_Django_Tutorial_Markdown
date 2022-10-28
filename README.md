@@ -341,6 +341,22 @@ $ sudo python3 -m venv env
 $ . env/bin/activate
 
 (env) me@ubuntu:$ pip install django
+```
+> Having problems installing django using pip?
+> 
+> Trying changing folder permissions so that your USER can actually install django via pip.
+> >https://careerkarma.com/blog/python-permissionerror-errno-13-permission-denied/
+> > https://linux.die.net/man/1/chown
+>
+> ``` sudo chown this_user /home/this_user/ -R  ```
+> 
+> "chown" -> change ownership of this folder
+> 
+> "/home/this_user/" -> the directory where you need to install django or whatever other problems you're having with installation.
+> 
+> "-R" -> do this recursively to all directories included.
+
+```
 
 (env) me@ubuntu:$ django-admin startproject myblog
 
