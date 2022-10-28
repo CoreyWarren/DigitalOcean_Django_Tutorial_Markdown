@@ -256,7 +256,10 @@ mysql> CREATE DATABASE blog_data;
 mysql> SHOW DATABASES;
 
 mysql> GRANT ALL ON blog_data.* TO 'djangouser'@'localhost';
+```
+(If an error is thrown, make sure that you have 'sudo' privileges')
 
+```sql
 mysql> FLUSH PRIVILEGES;
 
 /* ^C (Press Ctrl+C to exit) */
