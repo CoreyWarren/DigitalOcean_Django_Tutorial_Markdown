@@ -643,13 +643,16 @@ Solution: There's a lot more that must be done. But that won't be covered in thi
 
 Here are things not covered in this tutorial:
 
-```
-> nginx setup
-> .env file setup
-> snapshots versus backups in DigitalOcean (hint: use Snapshots as long-term backupsm, or suffer for months)
-> HTTPS setup
-> React Setup (Frontend - Industry Standard stuff)
-```
+* nginx setup
+
+* .env file setup
+
+* snapshots versus backups in DigitalOcean (hint: use Snapshots as long-term backupsm, or suffer for months)
+
+* HTTPS setup
+
+* React Setup (Frontend - Industry Standard stuff)
+
 
 > Need to deactivate your python env/venv/environment?
 ```
