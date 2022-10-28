@@ -491,6 +491,10 @@ Change your database section in settings.py so that it resembles this:
 DATABASES = {
 	'default': {
     	'ENGINE': 'django.db.backends.mysql',
+	'NAME': 'my_database',
+	'USER': 'my_mysql_user',
+	'PASSWORD': 'my_mysql_user_password',
+	'HOST': '127.0.0.1'
     	'OPTIONS': {
         	'read_default_file': '/etc/mysql/my.cnf',
     	},
