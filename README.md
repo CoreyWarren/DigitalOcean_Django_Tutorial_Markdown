@@ -156,6 +156,8 @@ sudo mysql_secure_installation
 
 You will be prompted for a password. Ideally, you would choose strength = 2 here.
 
+(MySQL Failed Error Tips: https://www.nixcraft.com/t/mysql-failed-error-set-password-has-no-significance-for-user-root-localhost-as-the-authentication-method-used-doesnt-store-authentication-data-in-the-mysql-server-please-consider-using-alter-user/4233 )
+
 From there, you can press Y and then ENTER to accept the defaults for all the subsequent questions. This will remove some anonymous users and the test database, disable remote root logins, and load these new rules so that MySQL immediately respects the changes you have made.
 
 Once the script completes, your MySQL installation will be secured. You can now move on to creating a dedicated database user with the MySQL client.
