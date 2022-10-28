@@ -297,9 +297,9 @@ $ sudo nano /etc/mysql/my.cnf
 In the file, enter the following lines at the END of the file:
 ```
 [client]
-database = blog_data
-user = djangouser
-password = your_actual_password
+database = my_database
+user = my_mysql_username
+password = my_mysql_password
 # OMITTED DUE TO ERRORS: default-character-set = utf8
 ```
 
