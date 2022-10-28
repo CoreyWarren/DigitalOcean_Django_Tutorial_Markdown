@@ -692,3 +692,7 @@ Here are things not covered in this tutorial:
 <br/>
 
 Now that these basic settings and configurations are complete, you can begin developing models and applying migrations in your Django application.
+
+<br/>
+
+Nginx tutorial: https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-20-04
