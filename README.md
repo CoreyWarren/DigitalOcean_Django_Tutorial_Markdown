@@ -195,6 +195,7 @@ mysql> CREATE USER 'insert_username'@'insert_host' IDENTIFIED BY 'insert_passwor
 
 > Note: see https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04 if you plan on using a PHP application, such as phpMyAdmin, which would require the mysql_native_password plugin instead for compatibility.
 
+> Note: Use 127.0.0.1 instead of 'localhost'. Django tends to really really NOT like 'localhost'. So use '127.0.0.1'.
 ```sql
 /* BASE FORMAT: */
 /* mysql> GRANT PRIVILEGE ON database.table TO 'username'@'host'; */
@@ -270,7 +271,7 @@ mysql> CREATE DATABASE blog_data;
 
 mysql> SHOW DATABASES;
 
-mysql> GRANT ALL ON blog_data.* TO 'djangouser'@'localhost';
+mysql> GRANT ALL ON blog_data.* TO 'djangouser'@'127.0.0.1';
 ```
 (If an error is thrown, make sure that you have 'sudo' privileges')
 
@@ -299,7 +300,7 @@ In the file, enter the following lines at the END of the file:
 database = blog_data
 user = djangouser
 password = your_actual_password
-default-character-set = utf8
+# OMITTED DUE TO ERRORS: default-character-set = utf8
 ```
 
 Once the file has been edited, you need to restart MySQL for the changes to take effect:
