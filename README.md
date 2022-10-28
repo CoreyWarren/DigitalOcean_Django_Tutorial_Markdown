@@ -156,7 +156,22 @@ sudo mysql_secure_installation
 
 You will be prompted for a password. Ideally, you would choose strength = 2 here.
 
-(MySQL Failed Error Tips: https://www.nixcraft.com/t/mysql-failed-error-set-password-has-no-significance-for-user-root-localhost-as-the-authentication-method-used-doesnt-store-authentication-data-in-the-mysql-server-please-consider-using-alter-user/4233 )
+(MySQL Failed Error Tips: https://www.nixcraft.com/t/mysql-failed-error-set-password-has-no-significance-for-user-root-localhost-as-the-authentication-method-used-doesnt-store-authentication-data-in-the-mysql-server-please-consider-using-alter-user/4233 
+
+```
+1. Open the terminal application.
+2. Terminate the mysql_secure_installation from another terminal using the killall command:
+> sudo killall -9 mysql_secure_installation
+3. Start the mysql client:
+> sudo mysql
+4. Run the following SQL query:
+> mysql>ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'SetRootPasswordHere';
+> mysql> exit
+5.Then run the following command to secure it:
+> sudo mysql_secure_installation
+6. When promoted for the password enter the SetRootPasswordHere (or whatever you set when you ran the above SQL query)
+That is all.)
+```
 
 From there, you can press Y and then ENTER to accept the defaults for all the subsequent questions. This will remove some anonymous users and the test database, disable remote root logins, and load these new rules so that MySQL immediately respects the changes you have made.
 
