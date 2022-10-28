@@ -317,7 +317,7 @@ $ cd my_blog_app
 
 $ sudo apt install python
 
-$ sudo apt install python3.8-venv
+$ sudo apt install python3-venv
 
 $ ls
 
