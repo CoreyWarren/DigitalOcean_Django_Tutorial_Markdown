@@ -558,6 +558,15 @@ $ . env/bin/activate
 > > mysql> FLUSH PRIVILEGES;
 
 
+What if you are getting an access denied warning?
+
+Check permissions with:
+```mysql
+mysql> SHOW GRANTS FOR 'this_user'@'this_host';
+```
+
+#
+## 6.3 - Superuser Creation
 After dealing with the mess that is migrations, Input this command:
 ```
 (env) me@ubuntu:$ python manage.py createsuperuser
