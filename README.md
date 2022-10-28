@@ -647,7 +647,7 @@ Here are things not covered in this tutorial:
 
 * .env file setup
 
-* snapshots versus backups in DigitalOcean (hint: use Snapshots as long-term backupsm, or suffer for months)
+* snapshots versus backups in DigitalOcean (hint: use Snapshots as long-term backups, and backups for short-term, or else just suffer for months)
 
 * HTTPS setup
 
