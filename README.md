@@ -649,9 +649,11 @@ Here are things not covered in this tutorial:
 
 * snapshots versus backups in DigitalOcean (hint: use Snapshots as long-term backups, and backups for short-term, or else just suffer for months)
 
-* HTTPS setup
+* HTTPS setup (certbot)
 
 * React Setup (Frontend - Industry Standard stuff)
+
+* postgres Setup
 
 
 > Need to deactivate your python env/venv/environment?
@@ -696,3 +698,9 @@ Now that these basic settings and configurations are complete, you can begin dev
 <br/>
 
 Nginx tutorial: https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-20-04
+
+<br/>
+
+Launching the server with nginx, postgres, and gunicorn (the legendary SOCK file creator):
+
+https://www.digitalocean.com/community/tutorials/how-to-set-up-django-with-postgres-nginx-and-gunicorn-on-ubuntu-22-04
