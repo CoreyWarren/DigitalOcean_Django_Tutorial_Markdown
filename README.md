@@ -348,7 +348,7 @@ $ . env/bin/activate
 > >https://careerkarma.com/blog/python-permissionerror-errno-13-permission-denied/
 > > https://linux.die.net/man/1/chown
 >
-> ``` sudo chown this_user /home/this_user/ -R  ```
+> ``` > sudo chown this_user /home/this_user/ -R  ```
 > 
 > "chown" -> change ownership of this folder
 > 
