@@ -182,7 +182,7 @@ mysql> CREATE USER 'insert_username'@'insert_host' IDENTIFIED BY 'insert_passwor
 
 ```sql
 /* BASE FORMAT: */
-mysql> GRANT PRIVILEGE ON database.table TO 'username'@'host';
+/* mysql> GRANT PRIVILEGE ON database.table TO 'username'@'host'; */
 
 /* EXAMPLE 'GRANT' COMMAND: */
 mysql> GRANT CREATE, ALTER, DROP, INSERT, UPDATE, DELETE, SELECT, REFERENCES, RELOAD on *.* TO 'coco'@'127.0.0.1' WITH GRANT OPTION;
