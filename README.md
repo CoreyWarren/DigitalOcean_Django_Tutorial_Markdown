@@ -520,7 +520,7 @@ The read_default_file option points to /etc/mysql/my.cnf, the MySQL option file 
 
 
 #
-## 6.2 - Migrate and Create a DJANGO Superuser
+## 6.2 - (Have a FUN) Migration in Django with your mySQL database:
 
 From wherever your manage.py file is (in your Django project):
 
