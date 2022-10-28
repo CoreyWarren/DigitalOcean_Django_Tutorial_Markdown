@@ -501,6 +501,12 @@ DATABASES = {
 
 > TIP: Make sure you copy/pasted those brackets correctly. Missing brackets can lead to some weird errors.
 
+Finally, go ahead and secure your SECRET_KEY using (https://foxrow.com/generating-django-secret-keys):
+```python
+$ python
+>>> import random
+>>> ''.join(random.SystemRandom().choice('abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(-_=+)') for i in range(50))
+```
 Save and close the file.
 
 The read_default_file option points to /etc/mysql/my.cnf, the MySQL option file you edited earlier. This tells Django where it can find the relevant connection details to connect to the MySQL database you created earlier.
