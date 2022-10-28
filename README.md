@@ -641,6 +641,16 @@ Problem: "Why isn't my connection private?" Let's get to that in a bit...
 
 Solution: There's a lot more that must be done. But that won't be covered in this tutorial, I'm sorry.
 
+Here are things not covered in this tutorial:
+
+```
+> nginx setup
+> .env file setup
+> snapshots versus backups in DigitalOcean (hint: use Snapshots as long-term backupsm, or suffer for months)
+> HTTPS setup
+> React Setup (Frontend - Industry Standard stuff)
+```
+
 > Need to deactivate your python env/venv/environment?
 ```
 (my_env) me@ubuntu:$ deactivate
