@@ -375,7 +375,7 @@ Congrats, doesn't it feel good to be back in Django-land? Rather than in PuTTy, 
 #
 ## 5 - Installing MySQL Database Connector
 
-Lots of terminal inputs only. No need to keep switching programs. Enjoy it!
+Lots of terminal inputs only. No need to keep switching programs. Enjoy it! **READ THIS SECTION COMPLETELY BEFORE STARTING.**
 
 This could get messy, though I've prepared for that a bit. If my solution doesn't work, then good luck...
 ```bash
@@ -387,6 +387,7 @@ This could get messy, though I've prepared for that a bit. If my solution doesn'
 (env) me@ubuntu:$ pip install wheel
 
 # Try this,
+(env) me@ubuntu:$ sudo apt-get install python3-dev default-libmysqlclient-dev build-essential
 (env) me@ubuntu:$ pip install mysqlclient
 # https://python-forum.io/thread-36288.html
 # https://pypi.org/project/mysqlclient/
