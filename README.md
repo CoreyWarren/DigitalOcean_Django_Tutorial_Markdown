@@ -171,6 +171,8 @@ Therefore, it’s best to avoid using this account outside of administrative fun
 
 ```
 $ sudo mysql
+(or...:
+$ sudo mysql -u root -p)
 ```
 ```sql
 mysql> CREATE USER 'insert_username'@'insert_host' IDENTIFIED BY 'insert_password';
