@@ -711,4 +711,4 @@ https://www.digitalocean.com/community/tutorials/how-to-set-up-django-with-postg
 >
 > Finding out which directory is the correct 'Working Directory' (explained in tutorial link)
 >
-> Figuring out which tutorial to follow (I used an old version for Ubuntu 16 instead of 22, which fit the project specs better, i.e.: gunicorn+ngninx, which function just fine even without a postgres database as mentioned in the tutorial)
+> Figuring out which tutorial to follow (I used an old version for Ubuntu 16 instead of 22, which fit the project specs better, i.e.: gunicorn+nginx, which function just fine even without a postgres database as mentioned in the tutorial--opting for a mySQL database instead)
