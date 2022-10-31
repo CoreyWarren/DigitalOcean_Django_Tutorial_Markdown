@@ -703,4 +703,12 @@ Nginx tutorial: https://www.digitalocean.com/community/tutorials/how-to-install-
 
 Launching the server with nginx, postgres, and gunicorn (the legendary SOCK file creator):
 
-https://www.digitalocean.com/community/tutorials/how-to-set-up-django-with-postgres-nginx-and-gunicorn-on-ubuntu-22-04
+https://www.digitalocean.com/community/tutorials/how-to-set-up-django-with-postgres-nginx-and-gunicorn-on-ubuntu-16-04
+
+> Things I had trouble with on this tutorial for setting up gunicorn:
+>
+> Incorrect syntax (forgetting slashes on directories)
+>
+> Finding out which directory is the correct 'Working Directory' (explained in tutorial link)
+>
+> Figuring out which tutorial to follow (I used an old version for Ubuntu 16 instead of 22, which fit the project specs better, i.e.: gunicorn+ngninx, which function just fine even without a postgres database as mentioned in the tutorial)
