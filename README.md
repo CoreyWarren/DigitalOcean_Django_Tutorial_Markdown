@@ -519,6 +519,25 @@ The read_default_file option points to /etc/mysql/my.cnf, the MySQL option file 
 >HAVING TROUBLE? - By pointing Django to your MySQL option file within the OPTIONS setting as in this example, it will take precedence over any NAME setting, which would otherwise override the option file if you were to point to it outside of the OPTIONS setting.
 
 
+### 6.1.2 - CORS
+
+Because you may have edited this setting for a React+Django app, consider making your CORS_ALLOWED_ORIGINS look more like this:
+
+```py
+CORS_ALLOWED_ORIGINS = [
+    'https://www.example.com',
+    'https://subdomain.example.com',
+    'http://localhost:8000',  # Example for allowing requests from localhost
+    # Add more origins as needed
+]
+```
+
+In the above example, you need to replace 'https://www.example.com' and 'https://subdomain.example.com' with the actual origins (domains or subdomains) that are allowed to make cross-origin requests to your Django application. You can add more origins to the list as needed.
+
+It's important to be selective and only allow the necessary origins to reduce the risk of potential security vulnerabilities. By specifying specific origins, you can ensure that only trusted domains are allowed to interact with your Django application in a cross-origin manner.
+
+After making the necessary changes, restart your production server for the new configuration to take effect.
+
 #
 ## 6.2 - (Have a FUN) Migration in Django with your mySQL database:
 
