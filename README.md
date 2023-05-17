@@ -238,8 +238,14 @@ mysql> exit
 
 In the future, to log in as your new MySQL user, you’d use a command like the following:
 ```
+$ mysql -u user -p -h 127.0.0.1
+```
+The above is made for our specific configuration, but normally you might just do this (I recommend the above for our specific purposes though):
+```
 $ mysql -u coco -p
 ```
+
+
 
 The -p flag will cause the MySQL client to prompt you for your MySQL user’s password in order to authenticate.
 
