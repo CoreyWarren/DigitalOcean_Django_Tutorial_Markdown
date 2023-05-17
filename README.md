@@ -12,7 +12,6 @@
 
  Prerequisites:
 > * An Ubuntu droplet on DigitalOcean (5-10 USD a month) that you have the IP address for 
-> * PuTTy installed on Windows
 > * Powershell with Admin Rights (or VSCode with Admin Rights)
 > * Internet Access
 
@@ -38,7 +37,7 @@
 
 Connect to the droplet thru the crappy web terminal that DO gives you.
 
-You are now connected to the server, and PuTTy has opened a new terminal with ROOT access to your DigitalOcean server.
+You are now connected to the server, with a new terminal with ROOT access to your DigitalOcean server.
 >
 
 > Add user:
