@@ -208,7 +208,7 @@ $ sudo mysql
 $ sudo mysql -u root -p)
 ```
 ```sql
-mysql> CREATE USER 'insert_username'@'insert_host' IDENTIFIED BY 'insert_password';
+mysql> CREATE USER 'insert_username'@'127.0.0.1' IDENTIFIED BY 'insert_password';
 ```
 
 > Note: see https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04 if you plan on using a PHP application, such as phpMyAdmin, which would require the mysql_native_password plugin instead for compatibility.
