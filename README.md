@@ -59,7 +59,7 @@ New password : _
 #
 ## 1.2 -- SSH setup
 
-### Step 1: Generate a new SSH key pair
+### >> Step 1: Generate a new SSH key pair
 
 In your Windows PowerShell, use the following command:
 
@@ -72,7 +72,7 @@ Next, you'll be asked to enter a passphrase. You can press enter to not use a pa
 
 This will create a new SSH key pair with a 4096 bit RSA key.
 
-### Step 2: Copy the public key to your server
+### >> Step 2: Copy the public key to your server
 
 Use the following command to print your public key:
 
@@ -91,7 +91,7 @@ chmod 600 ~/.ssh/authorized_keys
 
 Replace public_key_string with your actual public key. Make sure to keep the ssh-rsa part at the start.
 
-### Step 3: Log in with your new key
+### >> Step 3: Log in with your new key
 
 Now you should be able to log in with your new key. From your local machine, use the following command:
 
