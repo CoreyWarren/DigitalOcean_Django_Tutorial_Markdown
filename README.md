@@ -398,7 +398,7 @@ myblog manage.py
 Congrats, doesn't it feel good to be back in Django-land? Rather than in PuTTy, mySQL, etc. land? <3
 
 #
-## 5 - Installing MySQL Database Connector
+## 5.1 - Installing MySQL Database Connector
 
 Lots of terminal inputs only. No need to keep switching programs. Enjoy it! **READ THIS SECTION COMPLETELY BEFORE STARTING.**
 
@@ -427,6 +427,21 @@ This could get messy, though I've prepared for that a bit. If my solution doesn'
 (env) me@ubuntu:$ sudo apt-get install python3-dev default-libmysqlclient-dev build-essential
 (env) me@ubuntu:$ pip3 install mysqlclient
 ```
+
+## 5.2 - Installing requirements.txt:
+
+First, make sure you already ran:
+
+```bash
+sudo apt-get install libmysqlclient-dev
+```
+
+THEN, you can proceed (make sure you're in your env):
+
+```bash
+pip install -r requirements.txt
+```
+
 
 #
 ## 6.1 - Editing Django Project's Settings
