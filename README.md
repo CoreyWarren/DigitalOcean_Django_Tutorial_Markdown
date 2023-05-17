@@ -34,43 +34,11 @@
 
 
 #
-## 1.1 - Connect to Droplet with Putty
+## 1.1 - Basic User Setup on Droplet
 
+Connect to the droplet thru the crappy web terminal that DO gives you.
 
-Connect to server with PuTTy
-> Copy IP Address from the droplet you intend to work on.
-> 
-> Paste it into PuTTy, follow instructions:
->
-> Confirm that the Port is set to 22 and that the Connection type SSH is selected. 
->
-> \[Reminder: Use the correct IP address, not the one in the picture...\]
-> 
-> ![](images_putty/1.png)
->
-> Next, click on SSH in the left sidebar (under Connection). Make sure 2 is selected for SSH protocol version.
-> ![](images_putty/2.png)
->
-> Use a private key file if you want extra protection (optional):
->
-> ![](images_putty/3.png)
->
-> ![](images_putty/4.png)
->
-> Consider saving your session so you don't need to redo all of this manually.
->
-> ![](images_putty/5.png)
-
-
-
-
-After PuTTY starts, type in the root password that you chose when you created the Droplet. If you uploaded SSH keys, you are either connected directly or prompted for the password you set on your key.
-
-
-#
-## 1.2 - Basic User Setup on Droplet
-
-You are now connected to the server, and PuTTy has opened a new terminal with access to your DigitalOcean server.
+You are now connected to the server, and PuTTy has opened a new terminal with ROOT access to your DigitalOcean server.
 >
 
 > Add user:
@@ -88,6 +56,57 @@ New password : _
 # usermod -aG sudo insert_name
 ```
 ...This user will now have access to sudo commands.
+
+#
+## 1.2 -- SSH setup
+
+Step 1: Generate a new SSH key pair
+
+In your Windows PowerShell, use the following command:
+
+```bash
+ssh-keygen -t rsa -b 4096
+```
+You'll be asked to enter a file in which to save the key. Press enter to accept the default location (C:\Users\your_username\.ssh\id_rsa).
+
+Next, you'll be asked to enter a passphrase. You can press enter to not use a passphrase, but using one adds an additional layer of security.
+
+This will create a new SSH key pair with a 4096 bit RSA key.
+
+Step 2: Copy the public key to your server
+
+Use the following command to print your public key:
+
+```bash
+cat ~/.ssh/id_rsa.pub
+```
+This will print a long string starting with ssh-rsa. This is your public key.
+
+Next, log into your server (if you're unable to do so due to SSH issues, you might need to get help from your hosting provider). Once you're logged in, add the public key to the ~/.ssh/authorized_keys file for the user you want to log in as. You can do this with the following commands:
+
+```bash
+mkdir -p ~/.ssh
+echo your_long_public_key_string_here >> ~/.ssh/authorized_keys
+chmod 600 ~/.ssh/authorized_keys
+```
+
+Replace public_key_string with your actual public key. Make sure to keep the ssh-rsa part at the start.
+
+Step 3: Log in with your new key
+
+Now you should be able to log in with your new key. From your local machine, use the following command:
+
+```bash
+ssh username@your_server
+```
+
+Replace username with your username and your_server with the IP address or hostname of your server.
+
+The first time you log in, you'll be asked to verify the server's fingerprint. After you do this once, you won't be asked again.
+
+That's it! If everything was done correctly, you should be logged into your server.
+
+Remember that if you used a passphrase when you created your key, you'll be asked to enter it when you log in. You can use an SSH agent to remember your passphrase so you don't have to enter it every time.
 
 #
 ## 2 - Setup Droplet thru the Terminal
