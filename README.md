@@ -564,9 +564,9 @@ Because you may have edited this setting for a React+Django app, consider making
 
 ```py
 CORS_ALLOWED_ORIGINS = [
-    'https://www.example.com',
-    'https://subdomain.example.com',
-    'http://localhost:8000',  # Example for allowing requests from localhost
+    'https://www.example.com', #only needed if your, say, frontend is on another server like this
+    'https://subdomain.example.com', # only needed if some server here needs to connect to our Django backend
+    'http://localhost:3000',  # You will probably want to use this, to connect to React.
     # Add more origins as needed
 ]
 ```
