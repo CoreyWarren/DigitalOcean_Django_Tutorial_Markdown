@@ -644,6 +644,15 @@ Then, follow the instructions to create your super user. You don't necessarily n
 > Because, a superuser will have administrator rights and the ability to fiddle around with your database via Django's user-friendly database editor. It's handy! One of the main reasons you even want to use Django is to make use of its super user functionality.
 
 #
+## 6.4 Collect Static Files
+
+You want to do this so that your CSS renders, brah. Well, at least on the Django side of things (i.e.: admin portal):
+
+```bash
+python manage.py collectstatic
+```
+
+#
 ## 7 - Adjusting Firewall Settings
 
 Before testing the application, you need to adjust firewall settings.
